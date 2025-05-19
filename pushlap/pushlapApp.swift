@@ -1,17 +1,17 @@
-//
-//  pushlapApp.swift
-//  pushlap
-//
-//  Created by Max Barlow on 19/05/2025.
-//
-
 import SwiftUI
+import Firebase
+import FirebaseCore
+// if you’re using Auth/Firestore in the same file:
+import FirebaseAuth
+import FirebaseFirestore
 
 @main
-struct pushlapApp: App {
+struct pushlap: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
